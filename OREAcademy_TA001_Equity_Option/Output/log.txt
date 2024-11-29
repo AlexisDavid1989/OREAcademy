@@ -1,0 +1,518 @@
+NOTICE   [2024-Nov-29 11:41:22.731766]   (OREAnalytics\orea\app\parameters.cpp:123) : Parameters:
+NOTICE   [2024-Nov-29 11:41:22.733767]   (OREAnalytics\orea\app\parameters.cpp:126) : group = markets : eqcalibration = default
+NOTICE   [2024-Nov-29 11:41:22.734766]   (OREAnalytics\orea\app\parameters.cpp:126) : group = markets : fxcalibration = default
+NOTICE   [2024-Nov-29 11:41:22.735767]   (OREAnalytics\orea\app\parameters.cpp:126) : group = markets : lgmcalibration = default
+NOTICE   [2024-Nov-29 11:41:22.736767]   (OREAnalytics\orea\app\parameters.cpp:126) : group = markets : pricing = default
+NOTICE   [2024-Nov-29 11:41:22.737768]   (OREAnalytics\orea\app\parameters.cpp:126) : group = markets : simulation = default
+NOTICE   [2024-Nov-29 11:41:22.739767]   (OREAnalytics\orea\app\parameters.cpp:126) : group = npv : active = Y
+NOTICE   [2024-Nov-29 11:41:22.740766]   (OREAnalytics\orea\app\parameters.cpp:126) : group = npv : additionalResults = Y
+NOTICE   [2024-Nov-29 11:41:22.741769]   (OREAnalytics\orea\app\parameters.cpp:126) : group = npv : baseCurrency = EUR
+NOTICE   [2024-Nov-29 11:41:22.742769]   (OREAnalytics\orea\app\parameters.cpp:126) : group = npv : outputFileName = npv_VolatilitySurface.csv
+NOTICE   [2024-Nov-29 11:41:22.743766]   (OREAnalytics\orea\app\parameters.cpp:126) : group = setup : asofDate = 2021-06-24
+NOTICE   [2024-Nov-29 11:41:22.746764]   (OREAnalytics\orea\app\parameters.cpp:126) : group = setup : conventionsFile = conventions.xml
+NOTICE   [2024-Nov-29 11:41:22.747770]   (OREAnalytics\orea\app\parameters.cpp:126) : group = setup : curveConfigFile = VolatilitySurface/curveconfig_VolatilitySurface.xml
+NOTICE   [2024-Nov-29 11:41:22.749767]   (OREAnalytics\orea\app\parameters.cpp:126) : group = setup : fixingDataFile = fixings.txt
+NOTICE   [2024-Nov-29 11:41:22.750766]   (OREAnalytics\orea\app\parameters.cpp:126) : group = setup : implyTodaysFixings = N
+NOTICE   [2024-Nov-29 11:41:22.751765]   (OREAnalytics\orea\app\parameters.cpp:126) : group = setup : inputPath = Input
+NOTICE   [2024-Nov-29 11:41:22.752765]   (OREAnalytics\orea\app\parameters.cpp:126) : group = setup : logFile = log.txt
+NOTICE   [2024-Nov-29 11:41:22.753765]   (OREAnalytics\orea\app\parameters.cpp:126) : group = setup : logMask = 255
+NOTICE   [2024-Nov-29 11:41:22.754765]   (OREAnalytics\orea\app\parameters.cpp:126) : group = setup : marketConfigFile = todaysmarket.xml
+NOTICE   [2024-Nov-29 11:41:22.755765]   (OREAnalytics\orea\app\parameters.cpp:126) : group = setup : marketDataFile = VolatilitySurface/marketdata_VolatilitySurface.txt
+NOTICE   [2024-Nov-29 11:41:22.756766]   (OREAnalytics\orea\app\parameters.cpp:126) : group = setup : outputPath = Output
+NOTICE   [2024-Nov-29 11:41:22.757766]   (OREAnalytics\orea\app\parameters.cpp:126) : group = setup : portfolioFile = eqoption.xml
+NOTICE   [2024-Nov-29 11:41:22.759766]   (OREAnalytics\orea\app\parameters.cpp:126) : group = setup : pricingEnginesFile = pricingengine.xml
+NOTICE   [2024-Nov-29 11:41:22.760764]       (OREAnalytics\orea\app\oreapp.cpp:406) : buildInputParameters called
+WARNING  [2024-Nov-29 11:41:22.761766]       (OREAnalytics\orea\app\oreapp.cpp:428) : Calendar adjustments not found, using defaults
+WARNING  [2024-Nov-29 11:41:22.762766]       (OREAnalytics\orea\app\oreapp.cpp:439) : Currency configurations not found, using defaults
+WARNING  [2024-Nov-29 11:41:22.764766]       (OREAnalytics\orea\app\oreapp.cpp:512) : Reference data not found
+NOTICE   [2024-Nov-29 11:41:22.765765]       (OREAnalytics\orea\app\oreapp.cpp:517) : Loading conventions from file: Input/conventions.xml
+DEBUG    [2024-Nov-29 11:41:22.775767] (...ored\configuration\conventions.cpp:2448) : Loading Convention EUR-ZERO-TENOR-BASED
+DEBUG    [2024-Nov-29 11:41:22.778765] (...ored\configuration\conventions.cpp:2448) : Loading Convention EUR-ON-DEPOSIT-ESTER
+DEBUG    [2024-Nov-29 11:41:22.779766] (...ored\configuration\conventions.cpp:2448) : Loading Convention EUR-ESTER-OIS
+DATA     [2024-Nov-29 11:41:22.784767] (...ed\utilities\indexnametranslator.cpp:44) : IndexNameTranslator: adding 'EsterON Actual/360' <-> 'EUR-ESTER'
+WARNING  [2024-Nov-29 11:41:22.785766]       (OREAnalytics\orea\app\oreapp.cpp:528) : Using default Ibor fallback config
+NOTICE   [2024-Nov-29 11:41:22.786764]       (OREAnalytics\orea\app\oreapp.cpp:533) : Load curve configurations from file: 
+NOTICE   [2024-Nov-29 11:41:22.795765]       (OREAnalytics\orea\app\oreapp.cpp:542) : Load pricing engine data from file: Input/pricingengine.xml
+DEBUG    [2024-Nov-29 11:41:22.801768]   (OREData\ored\portfolio\enginedata.cpp:50) : EngineData product=EquityOption model=BlackScholesMerton
+DEBUG    [2024-Nov-29 11:41:22.802768]   (OREData\ored\portfolio\enginedata.cpp:64) : EngineData product=EquityOption engine=AnalyticEuropeanEngine
+DEBUG    [2024-Nov-29 11:41:22.804766]   (OREData\ored\portfolio\enginedata.cpp:50) : EngineData product=EquityOptionEuropeanCS model=BlackScholesMerton
+DEBUG    [2024-Nov-29 11:41:22.805766]   (OREData\ored\portfolio\enginedata.cpp:64) : EngineData product=EquityOptionEuropeanCS engine=AnalyticCashSettledEuropeanEngine
+NOTICE   [2024-Nov-29 11:41:22.806766]       (OREAnalytics\orea\app\oreapp.cpp:551) : Loading today's market parameters from fileInput/todaysmarket.xml
+DEBUG    [2024-Nov-29 11:41:22.813769] (...rketdata\todaysmarketparameters.cpp:322) : TodaysMarketParameters, add market objects of type DiscountCurve: default EUR Yield/EUR/EUR-EONIA
+DEBUG    [2024-Nov-29 11:41:22.814771] (...rketdata\todaysmarketparameters.cpp:322) : TodaysMarketParameters, add market objects of type IndexCurve: default EUR-EONIA Yield/EUR/EUR-EONIA
+DEBUG    [2024-Nov-29 11:41:22.815772] (...rketdata\todaysmarketparameters.cpp:322) : TodaysMarketParameters, add market objects of type IndexCurve: default EUR-ESTER Yield/EUR/EUR-ESTER
+DEBUG    [2024-Nov-29 11:41:22.817771] (...rketdata\todaysmarketparameters.cpp:322) : TodaysMarketParameters, add market objects of type EquityCurves: default RIC:.STOXX50E Equity/EUR/RIC:.STOXX50E
+DEBUG    [2024-Nov-29 11:41:22.819773] (...rketdata\todaysmarketparameters.cpp:322) : TodaysMarketParameters, add market objects of type EquityVols: default RIC:.STOXX50E EquityVolatility/EUR/RIC:.STOXX50E
+NOTICE   [2024-Nov-29 11:41:22.820772] (...lytics\orea\app\inputparameters.cpp:130) : Loading portfolio from file: Input/eqoption.xml
+DEBUG    [2024-Nov-29 11:41:22.827293]    (OREData\ored\portfolio\portfolio.cpp:58) : Parsing trade id:EQ_CALL_STOXX50E
+DEBUG    [2024-Nov-29 11:41:22.829293]    (OREData\ored\portfolio\portfolio.cpp:68) : Added Trade EQ_CALL_STOXX50E (EQ_CALL_STOXX50E) type:EquityOption
+NOTICE   [2024-Nov-29 11:41:22.830293]    (OREData\ored\portfolio\portfolio.cpp:95) : Finished Parsing XML doc
+NOTICE   [2024-Nov-29 11:41:22.831294]       (OREAnalytics\orea\app\oreapp.cpp:570) : MarketContext::eqcalibration = default
+NOTICE   [2024-Nov-29 11:41:22.832294]       (OREAnalytics\orea\app\oreapp.cpp:570) : MarketContext::fxcalibration = default
+NOTICE   [2024-Nov-29 11:41:22.833290]       (OREAnalytics\orea\app\oreapp.cpp:570) : MarketContext::lgmcalibration = default
+NOTICE   [2024-Nov-29 11:41:22.834290]       (OREAnalytics\orea\app\oreapp.cpp:570) : MarketContext::pricing = default
+NOTICE   [2024-Nov-29 11:41:22.835292]       (OREAnalytics\orea\app\oreapp.cpp:570) : MarketContext::simulation = default
+NOTICE   [2024-Nov-29 11:41:22.836291]      (OREAnalytics\orea\app\oreapp.cpp:1171) : buildInputParameters done
+NOTICE   [2024-Nov-29 11:41:22.837292] (...lytics\orea\app\inputparameters.cpp:380) : OutputFileNameMap called
+NOTICE   [2024-Nov-29 11:41:22.839290] (...lytics\orea\app\inputparameters.cpp:438) : OutputFileNameMap complete
+NOTICE   [2024-Nov-29 11:41:22.840291]       (OREAnalytics\orea\app\oreapp.cpp:217) : ORE analytics starting
+DEBUG    [2024-Nov-29 11:41:22.841294]      (OREData\ored\marketdata\market.cpp:98) : Building default PseudoCurrencyMarketParameters
+DEBUG    [2024-Nov-29 11:41:22.842294]     (OREData\ored\marketdata\market.cpp:100) : PseudoCurrencyMarketParameters { TreatAsFX:True, BaseCurrency:}
+DEBUG    [2024-Nov-29 11:41:22.843294]      (OREData\ored\marketdata\market.cpp:98) : Building default PseudoCurrencyMarketParameters
+DEBUG    [2024-Nov-29 11:41:22.845293]     (OREData\ored\marketdata\market.cpp:100) : PseudoCurrencyMarketParameters { TreatAsFX:True, BaseCurrency:}
+WARNING  [2024-Nov-29 11:41:22.846290]       (OREAnalytics\orea\app\oreapp.cpp:206) : dividend data file not found
+NOTICE   [2024-Nov-29 11:41:22.847292]   (OREData\ored\marketdata\csvloader.cpp:94) : CSVLoader loading from Input/VolatilitySurface/marketdata_VolatilitySurface.txt
+DATA     [2024-Nov-29 11:41:22.856291]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY/PRICE/RIC:.STOXX50E/EUR
+DATA     [2024-Nov-29 11:41:22.858291]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_DIVIDEND/RATE/RIC:.STOXX50E/EUR/2021-11-19
+DATA     [2024-Nov-29 11:41:22.860292]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_DIVIDEND/RATE/RIC:.STOXX50E/EUR/2021-12-17
+DATA     [2024-Nov-29 11:41:22.862291]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_DIVIDEND/RATE/RIC:.STOXX50E/EUR/2022-03-18
+DATA     [2024-Nov-29 11:41:22.864289]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_FWD/PRICE/RIC:.STOXX50E/EUR/2021-11-19
+DATA     [2024-Nov-29 11:41:22.866289]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_FWD/PRICE/RIC:.STOXX50E/EUR/2021-12-17
+DATA     [2024-Nov-29 11:41:22.869291]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_FWD/PRICE/RIC:.STOXX50E/EUR/2022-03-18
+DATA     [2024-Nov-29 11:41:22.870290]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-11-19/3975/C
+DATA     [2024-Nov-29 11:41:22.872290]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-11-19/3975/P
+DATA     [2024-Nov-29 11:41:22.874290]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-11-19/4000/C
+DATA     [2024-Nov-29 11:41:22.875290]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-11-19/4000/P
+DATA     [2024-Nov-29 11:41:22.876290]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-11-19/4025/C
+DATA     [2024-Nov-29 11:41:22.878290]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-11-19/4025/P
+DATA     [2024-Nov-29 11:41:22.879291]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-12-17/3975/C
+DATA     [2024-Nov-29 11:41:22.880289]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-12-17/3975/P
+DATA     [2024-Nov-29 11:41:22.881289]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-12-17/4000/C
+DATA     [2024-Nov-29 11:41:22.883289]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-12-17/4000/P
+DATA     [2024-Nov-29 11:41:22.884289]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-12-17/4025/C
+DATA     [2024-Nov-29 11:41:22.885293]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-12-17/4025/P
+DATA     [2024-Nov-29 11:41:22.886289]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2022-03-18/3950/C
+DATA     [2024-Nov-29 11:41:22.888291]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2022-03-18/3950/P
+DATA     [2024-Nov-29 11:41:22.889290]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2022-03-18/4000/C
+DATA     [2024-Nov-29 11:41:22.890294]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2022-03-18/4000/P
+DATA     [2024-Nov-29 11:41:22.892291]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2022-03-18/4050/C
+DATA     [2024-Nov-29 11:41:22.893290]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2022-03-18/4050/P
+DATA     [2024-Nov-29 11:41:22.894290]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-10-24/3000
+DATA     [2024-Nov-29 11:41:22.895289]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-10-24/3300
+DATA     [2024-Nov-29 11:41:22.897289]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-10-24/3600
+DATA     [2024-Nov-29 11:41:22.898293]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-10-24/3900
+DATA     [2024-Nov-29 11:41:22.899289]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-10-24/4200
+DATA     [2024-Nov-29 11:41:22.900289]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-10-24/4500
+DATA     [2024-Nov-29 11:41:22.902292]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-10-24/4800
+DATA     [2024-Nov-29 11:41:22.903291]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-11-24/3000
+DATA     [2024-Nov-29 11:41:22.904291]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-11-24/3300
+DATA     [2024-Nov-29 11:41:22.906291]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-11-24/3600
+DATA     [2024-Nov-29 11:41:22.907290]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-11-24/3900
+DATA     [2024-Nov-29 11:41:22.908291]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-11-24/4200
+DATA     [2024-Nov-29 11:41:22.910297]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-11-24/4500
+DATA     [2024-Nov-29 11:41:22.911297]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-11-24/4800
+DATA     [2024-Nov-29 11:41:22.912297]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-12-24/3000
+DATA     [2024-Nov-29 11:41:22.913297]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-12-24/3300
+DATA     [2024-Nov-29 11:41:22.915297]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-12-24/3600
+DATA     [2024-Nov-29 11:41:22.916297]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-12-24/3900
+DATA     [2024-Nov-29 11:41:22.917297]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-12-24/4200
+DATA     [2024-Nov-29 11:41:22.918297]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-12-24/4500
+DATA     [2024-Nov-29 11:41:22.920297]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-12-24/4800
+DATA     [2024-Nov-29 11:41:22.921297]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-01-24/3000
+DATA     [2024-Nov-29 11:41:22.922297]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-01-24/3300
+DATA     [2024-Nov-29 11:41:22.924297]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-01-24/3600
+DATA     [2024-Nov-29 11:41:22.924803]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-01-24/3900
+DATA     [2024-Nov-29 11:41:22.926810]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-01-24/4200
+DATA     [2024-Nov-29 11:41:22.927809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-01-24/4500
+DATA     [2024-Nov-29 11:41:22.928809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-01-24/4800
+DATA     [2024-Nov-29 11:41:22.929809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-02-24/3000
+DATA     [2024-Nov-29 11:41:22.931809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-02-24/3300
+DATA     [2024-Nov-29 11:41:22.932809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-02-24/3600
+DATA     [2024-Nov-29 11:41:22.933810]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-02-24/3900
+DATA     [2024-Nov-29 11:41:22.934809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-02-24/4200
+DATA     [2024-Nov-29 11:41:22.936810]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-02-24/4500
+DATA     [2024-Nov-29 11:41:22.937810]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-02-24/4800
+DATA     [2024-Nov-29 11:41:22.938810]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-03-24/3000
+DATA     [2024-Nov-29 11:41:22.940810]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-03-24/3300
+DATA     [2024-Nov-29 11:41:22.941810]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-03-24/3600
+DATA     [2024-Nov-29 11:41:22.942810]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-03-24/3900
+DATA     [2024-Nov-29 11:41:22.944810]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-03-24/4200
+DATA     [2024-Nov-29 11:41:22.945809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-03-24/4500
+DATA     [2024-Nov-29 11:41:22.946809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-03-24/4800
+DATA     [2024-Nov-29 11:41:22.947810]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/10M
+DATA     [2024-Nov-29 11:41:22.948810]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/10Y
+DATA     [2024-Nov-29 11:41:22.950809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/11M
+DATA     [2024-Nov-29 11:41:22.951808]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/11Y
+DATA     [2024-Nov-29 11:41:22.953811]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/12Y
+DATA     [2024-Nov-29 11:41:22.954810]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/15M
+DATA     [2024-Nov-29 11:41:22.955809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/15Y
+DATA     [2024-Nov-29 11:41:22.956813]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/18M
+DATA     [2024-Nov-29 11:41:22.958812]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/1M
+DATA     [2024-Nov-29 11:41:22.959809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/1W
+DATA     [2024-Nov-29 11:41:22.960808]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/1Y
+DATA     [2024-Nov-29 11:41:22.962809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/20Y
+DATA     [2024-Nov-29 11:41:22.963810]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/21M
+DATA     [2024-Nov-29 11:41:22.964809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/25Y
+DATA     [2024-Nov-29 11:41:22.965811]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/2M
+DATA     [2024-Nov-29 11:41:22.967809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/2W
+DATA     [2024-Nov-29 11:41:22.968811]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/2Y
+DATA     [2024-Nov-29 11:41:22.969808]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/30Y
+DATA     [2024-Nov-29 11:41:22.970809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/3M
+DATA     [2024-Nov-29 11:41:22.972809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/3W
+DATA     [2024-Nov-29 11:41:22.973810]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/3Y
+DATA     [2024-Nov-29 11:41:22.974809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/40Y
+DATA     [2024-Nov-29 11:41:22.975808]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/4M
+DATA     [2024-Nov-29 11:41:22.976810]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/4Y
+DATA     [2024-Nov-29 11:41:22.978810]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/50Y
+DATA     [2024-Nov-29 11:41:22.979809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/5M
+DATA     [2024-Nov-29 11:41:22.980808]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/5Y
+DATA     [2024-Nov-29 11:41:22.981809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/60Y
+DATA     [2024-Nov-29 11:41:22.983810]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/6M
+DATA     [2024-Nov-29 11:41:22.984809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/6Y
+DATA     [2024-Nov-29 11:41:22.985809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/7M
+DATA     [2024-Nov-29 11:41:22.986810]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/7Y
+DATA     [2024-Nov-29 11:41:22.987809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/8M
+DATA     [2024-Nov-29 11:41:22.989811]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/8Y
+DATA     [2024-Nov-29 11:41:22.990809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/9M
+DATA     [2024-Nov-29 11:41:22.991810]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/9Y
+DATA     [2024-Nov-29 11:41:22.992809]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum MM/RATE/EUR/ESTER/0D/1D
+DATA     [2024-Nov-29 11:41:22.994811]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum ZERO/YIELD_SPREAD/EUR/EONIA_ESTER_SPREAD/A365/1D
+DATA     [2024-Nov-29 11:41:22.995811]  (OREData\ored\marketdata\csvloader.cpp:133) : Added MarketDatum ZERO/YIELD_SPREAD/EUR/EONIA_ESTER_SPREAD/A365/50Y
+NOTICE   [2024-Nov-29 11:41:22.996811]  (OREData\ored\marketdata\csvloader.cpp:166) : CSVLoader completed processing Input/VolatilitySurface/marketdata_VolatilitySurface.txt
+NOTICE   [2024-Nov-29 11:41:22.998811]   (OREData\ored\marketdata\csvloader.cpp:78) : CSVLoader loaded 106 market data points for June 24th, 2021
+NOTICE   [2024-Nov-29 11:41:22.999811]   (OREData\ored\marketdata\csvloader.cpp:94) : CSVLoader loading from Input/fixings.txt
+NOTICE   [2024-Nov-29 11:41:23.000813]  (OREData\ored\marketdata\csvloader.cpp:166) : CSVLoader completed processing Input/fixings.txt
+NOTICE   [2024-Nov-29 11:41:23.001812]   (OREData\ored\marketdata\csvloader.cpp:83) : CSVLoader loaded 0 fixings
+NOTICE   [2024-Nov-29 11:41:23.002812]   (OREData\ored\marketdata\csvloader.cpp:88) : CSVLoader loaded 0 dividends
+NOTICE   [2024-Nov-29 11:41:23.003809]   (OREData\ored\marketdata\csvloader.cpp:90) : CSVLoader complete.
+NOTICE   [2024-Nov-29 11:41:23.005808] (...lytics\orea\app\analyticsmanager.cpp:71) : register analytic with label 'MARKETDATA' and sub-analytics MARKETDATA
+NOTICE   [2024-Nov-29 11:41:23.006809] (...lytics\orea\app\analyticsmanager.cpp:71) : register analytic with label 'PRICING' and sub-analytics CASHFLOW,CASHFLOWNPV,NPV,SENSITIVITY,STRESS
+NOTICE   [2024-Nov-29 11:41:23.007809] (...lytics\orea\app\analyticsmanager.cpp:71) : register analytic with label 'VAR' and sub-analytics VAR
+NOTICE   [2024-Nov-29 11:41:23.008808] (...s\orea\app\analytics\xvaanalytic.cpp:46) : XvaAnalytic::setUpConfigurations() called
+NOTICE   [2024-Nov-29 11:41:23.009813] (...lytics\orea\app\analyticsmanager.cpp:71) : register analytic with label 'XVA' and sub-analytics EXPOSURE,XVA
+NOTICE   [2024-Nov-29 11:41:23.010814]       (OREAnalytics\orea\app\oreapp.cpp:234) : Available analytics: CASHFLOW,CASHFLOWNPV,EXPOSURE,MARKETDATA,NPV,SENSITIVITY,STRESS,VAR,XVA
+NOTICE   [2024-Nov-29 11:41:23.012815]       (OREAnalytics\orea\app\oreapp.cpp:237) : Requested analytics: NPV
+NOTICE   [2024-Nov-29 11:41:23.013815] (...ytics\orea\app\analyticsmanager.cpp:129) : AnalyticsManager::runAnalytics: requireMarketData Y
+NOTICE   [2024-Nov-29 11:41:23.015814] (...ytics\orea\app\analyticsmanager.cpp:134) : AnalyticsManager::runAnalytics: populate loader
+NOTICE   [2024-Nov-29 11:41:23.016814] (...ics\orea\app\marketdatacsvloader.cpp:77) : MarketDataCsvLoader::retrieveFixings called: all fixings ? Y
+NOTICE   [2024-Nov-29 11:41:23.017812] (...ytics\orea\app\marketdataloader.cpp:263) : Adding the loaded fixings to the IndexManager
+NOTICE   [2024-Nov-29 11:41:23.018813]     (OREData\ored\marketdata\fixings.cpp:68) : Added 0 of 0 fixings in 0.000003 seconds
+NOTICE   [2024-Nov-29 11:41:23.019815] (...ytics\orea\app\marketdataloader.cpp:267) : Generating market datum set
+DEBUG    [2024-Nov-29 11:41:23.020813] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-EONIA
+DEBUG    [2024-Nov-29 11:41:23.021812] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-EONIA
+DEBUG    [2024-Nov-29 11:41:23.022815] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-ESTER
+DEBUG    [2024-Nov-29 11:41:23.024324] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Equity/EUR/RIC:.STOXX50E
+DEBUG    [2024-Nov-29 11:41:23.025330] (...rketdata\todaysmarketparameters.cpp:262) : Add spec EquityVolatility/EUR/RIC:.STOXX50E
+DEBUG    [2024-Nov-29 11:41:23.028330] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-EONIA
+DEBUG    [2024-Nov-29 11:41:23.029331] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-EONIA
+DEBUG    [2024-Nov-29 11:41:23.030329] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-ESTER
+DEBUG    [2024-Nov-29 11:41:23.031332] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Equity/EUR/RIC:.STOXX50E
+DEBUG    [2024-Nov-29 11:41:23.032334] (...rketdata\todaysmarketparameters.cpp:262) : Add spec EquityVolatility/EUR/RIC:.STOXX50E
+DEBUG    [2024-Nov-29 11:41:23.034333] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-EONIA
+DEBUG    [2024-Nov-29 11:41:23.035333] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-EONIA
+DEBUG    [2024-Nov-29 11:41:23.036332] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-ESTER
+DEBUG    [2024-Nov-29 11:41:23.037331] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Equity/EUR/RIC:.STOXX50E
+DEBUG    [2024-Nov-29 11:41:23.038329] (...rketdata\todaysmarketparameters.cpp:262) : Add spec EquityVolatility/EUR/RIC:.STOXX50E
+DEBUG    [2024-Nov-29 11:41:23.040334] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-EONIA
+DEBUG    [2024-Nov-29 11:41:23.041334] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-EONIA
+DEBUG    [2024-Nov-29 11:41:23.042333] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-ESTER
+DEBUG    [2024-Nov-29 11:41:23.043333] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Equity/EUR/RIC:.STOXX50E
+DEBUG    [2024-Nov-29 11:41:23.044333] (...rketdata\todaysmarketparameters.cpp:262) : Add spec EquityVolatility/EUR/RIC:.STOXX50E
+DEBUG    [2024-Nov-29 11:41:23.046334] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-EONIA
+DEBUG    [2024-Nov-29 11:41:23.047333] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-EONIA
+DEBUG    [2024-Nov-29 11:41:23.048333] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-ESTER
+DEBUG    [2024-Nov-29 11:41:23.049333] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Equity/EUR/RIC:.STOXX50E
+DEBUG    [2024-Nov-29 11:41:23.050334] (...rketdata\todaysmarketparameters.cpp:262) : Add spec EquityVolatility/EUR/RIC:.STOXX50E
+DEBUG    [2024-Nov-29 11:41:23.052333] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-EONIA
+DEBUG    [2024-Nov-29 11:41:23.053333] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-EONIA
+DEBUG    [2024-Nov-29 11:41:23.054334] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-ESTER
+DEBUG    [2024-Nov-29 11:41:23.055333] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Equity/EUR/RIC:.STOXX50E
+DEBUG    [2024-Nov-29 11:41:23.056332] (...rketdata\todaysmarketparameters.cpp:262) : Add spec EquityVolatility/EUR/RIC:.STOXX50E
+DEBUG    [2024-Nov-29 11:41:23.058333] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-EONIA
+DEBUG    [2024-Nov-29 11:41:23.059331] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-EONIA
+DEBUG    [2024-Nov-29 11:41:23.061333] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-ESTER
+DEBUG    [2024-Nov-29 11:41:23.062333] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Equity/EUR/RIC:.STOXX50E
+DEBUG    [2024-Nov-29 11:41:23.063333] (...rketdata\todaysmarketparameters.cpp:262) : Add spec EquityVolatility/EUR/RIC:.STOXX50E
+DEBUG    [2024-Nov-29 11:41:23.064333] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-EONIA
+DEBUG    [2024-Nov-29 11:41:23.065334] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-EONIA
+DEBUG    [2024-Nov-29 11:41:23.066333] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Yield/EUR/EUR-ESTER
+DEBUG    [2024-Nov-29 11:41:23.068333] (...rketdata\todaysmarketparameters.cpp:262) : Add spec Equity/EUR/RIC:.STOXX50E
+DEBUG    [2024-Nov-29 11:41:23.069333] (...rketdata\todaysmarketparameters.cpp:262) : Add spec EquityVolatility/EUR/RIC:.STOXX50E
+NOTICE   [2024-Nov-29 11:41:23.070333] (...ytics\orea\app\marketdataloader.cpp:285) : CurveConfigs require 42 quotes
+DATA     [2024-Nov-29 11:41:23.071334] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY/PRICE/RIC:.STOXX50E/EUR
+DATA     [2024-Nov-29 11:41:23.073333] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_DIVIDEND/RATE/RIC:.STOXX50E/EUR/2021-11-19
+DATA     [2024-Nov-29 11:41:23.074334] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_DIVIDEND/RATE/RIC:.STOXX50E/EUR/2021-12-17
+DATA     [2024-Nov-29 11:41:23.075333] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_DIVIDEND/RATE/RIC:.STOXX50E/EUR/2022-03-18
+DATA     [2024-Nov-29 11:41:23.076334] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_FWD/PRICE/RIC:.STOXX50E/EUR/2021-11-19
+DATA     [2024-Nov-29 11:41:23.077334] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_FWD/PRICE/RIC:.STOXX50E/EUR/2021-12-17
+DATA     [2024-Nov-29 11:41:23.079333] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_FWD/PRICE/RIC:.STOXX50E/EUR/2022-03-18
+DATA     [2024-Nov-29 11:41:23.080334] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-11-19/3975/C
+DATA     [2024-Nov-29 11:41:23.081334] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-11-19/3975/P
+DATA     [2024-Nov-29 11:41:23.082334] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-11-19/4000/C
+DATA     [2024-Nov-29 11:41:23.084332] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-11-19/4000/P
+DATA     [2024-Nov-29 11:41:23.085330] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-11-19/4025/C
+DATA     [2024-Nov-29 11:41:23.087332] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-11-19/4025/P
+DATA     [2024-Nov-29 11:41:23.089331] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-12-17/3975/C
+DATA     [2024-Nov-29 11:41:23.090332] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-12-17/3975/P
+DATA     [2024-Nov-29 11:41:23.092329] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-12-17/4000/C
+DATA     [2024-Nov-29 11:41:23.093331] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-12-17/4000/P
+DATA     [2024-Nov-29 11:41:23.094333] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-12-17/4025/C
+DATA     [2024-Nov-29 11:41:23.095331] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-12-17/4025/P
+DATA     [2024-Nov-29 11:41:23.097329] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2022-03-18/3950/C
+DATA     [2024-Nov-29 11:41:23.098329] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2022-03-18/3950/P
+DATA     [2024-Nov-29 11:41:23.099333] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2022-03-18/4000/C
+DATA     [2024-Nov-29 11:41:23.100330] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2022-03-18/4000/P
+DATA     [2024-Nov-29 11:41:23.102333] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2022-03-18/4050/C
+DATA     [2024-Nov-29 11:41:23.103331] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2022-03-18/4050/P
+DATA     [2024-Nov-29 11:41:23.104330] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-10-24/3000
+DATA     [2024-Nov-29 11:41:23.106331] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-10-24/3300
+DATA     [2024-Nov-29 11:41:23.107332] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-10-24/3600
+DATA     [2024-Nov-29 11:41:23.108332] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-10-24/3900
+DATA     [2024-Nov-29 11:41:23.109333] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-10-24/4200
+DATA     [2024-Nov-29 11:41:23.111338] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-10-24/4500
+DATA     [2024-Nov-29 11:41:23.112338] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-10-24/4800
+DATA     [2024-Nov-29 11:41:23.113340] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-11-24/3000
+DATA     [2024-Nov-29 11:41:23.115339] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-11-24/3300
+DATA     [2024-Nov-29 11:41:23.116339] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-11-24/3600
+DATA     [2024-Nov-29 11:41:23.117339] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-11-24/3900
+DATA     [2024-Nov-29 11:41:23.118342] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-11-24/4200
+DATA     [2024-Nov-29 11:41:23.120338] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-11-24/4500
+DATA     [2024-Nov-29 11:41:23.121338] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-11-24/4800
+DATA     [2024-Nov-29 11:41:23.122337] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-12-24/3000
+DATA     [2024-Nov-29 11:41:23.123338] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-12-24/3300
+DATA     [2024-Nov-29 11:41:23.125368] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-12-24/3600
+DATA     [2024-Nov-29 11:41:23.126368] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-12-24/3900
+DATA     [2024-Nov-29 11:41:23.127368] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-12-24/4200
+DATA     [2024-Nov-29 11:41:23.128368] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-12-24/4500
+DATA     [2024-Nov-29 11:41:23.129367] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2021-12-24/4800
+DATA     [2024-Nov-29 11:41:23.131372] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-01-24/3000
+DATA     [2024-Nov-29 11:41:23.132371] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-01-24/3300
+DATA     [2024-Nov-29 11:41:23.133371] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-01-24/3600
+DATA     [2024-Nov-29 11:41:23.134372] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-01-24/3900
+DATA     [2024-Nov-29 11:41:23.135372] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-01-24/4200
+DATA     [2024-Nov-29 11:41:23.136371] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-01-24/4500
+DATA     [2024-Nov-29 11:41:23.138366] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-01-24/4800
+DATA     [2024-Nov-29 11:41:23.139369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-02-24/3000
+DATA     [2024-Nov-29 11:41:23.140368] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-02-24/3300
+DATA     [2024-Nov-29 11:41:23.141368] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-02-24/3600
+DATA     [2024-Nov-29 11:41:23.142368] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-02-24/3900
+DATA     [2024-Nov-29 11:41:23.144368] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-02-24/4200
+DATA     [2024-Nov-29 11:41:23.145369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-02-24/4500
+DATA     [2024-Nov-29 11:41:23.146369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-02-24/4800
+DATA     [2024-Nov-29 11:41:23.147369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-03-24/3000
+DATA     [2024-Nov-29 11:41:23.148369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-03-24/3300
+DATA     [2024-Nov-29 11:41:23.150369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-03-24/3600
+DATA     [2024-Nov-29 11:41:23.151368] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-03-24/3900
+DATA     [2024-Nov-29 11:41:23.152368] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-03-24/4200
+DATA     [2024-Nov-29 11:41:23.153369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-03-24/4500
+DATA     [2024-Nov-29 11:41:23.154367] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum EQUITY_OPTION/RATE_LNVOL/RIC:.STOXX50E/EUR/2022-03-24/4800
+DATA     [2024-Nov-29 11:41:23.156367] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/10M
+DATA     [2024-Nov-29 11:41:23.157367] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/10Y
+DATA     [2024-Nov-29 11:41:23.158369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/11M
+DATA     [2024-Nov-29 11:41:23.159369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/11Y
+DATA     [2024-Nov-29 11:41:23.160369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/12Y
+DATA     [2024-Nov-29 11:41:23.161368] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/15M
+DATA     [2024-Nov-29 11:41:23.163369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/15Y
+DATA     [2024-Nov-29 11:41:23.164368] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/18M
+DATA     [2024-Nov-29 11:41:23.165369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/1M
+DATA     [2024-Nov-29 11:41:23.166369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/1W
+DATA     [2024-Nov-29 11:41:23.167369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/1Y
+DATA     [2024-Nov-29 11:41:23.168369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/20Y
+DATA     [2024-Nov-29 11:41:23.169368] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/21M
+DATA     [2024-Nov-29 11:41:23.171369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/25Y
+DATA     [2024-Nov-29 11:41:23.172368] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/2M
+DATA     [2024-Nov-29 11:41:23.173369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/2W
+DATA     [2024-Nov-29 11:41:23.174369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/2Y
+DATA     [2024-Nov-29 11:41:23.175369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/30Y
+DATA     [2024-Nov-29 11:41:23.176369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/3M
+DATA     [2024-Nov-29 11:41:23.177368] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/3W
+DATA     [2024-Nov-29 11:41:23.179368] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/3Y
+DATA     [2024-Nov-29 11:41:23.180369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/40Y
+DATA     [2024-Nov-29 11:41:23.181368] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/4M
+DATA     [2024-Nov-29 11:41:23.182369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/4Y
+DATA     [2024-Nov-29 11:41:23.183369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/50Y
+DATA     [2024-Nov-29 11:41:23.184369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/5M
+DATA     [2024-Nov-29 11:41:23.185368] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/5Y
+DATA     [2024-Nov-29 11:41:23.187369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/60Y
+DATA     [2024-Nov-29 11:41:23.188369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/6M
+DATA     [2024-Nov-29 11:41:23.189369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/6Y
+DATA     [2024-Nov-29 11:41:23.190368] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/7M
+DATA     [2024-Nov-29 11:41:23.191369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/7Y
+DATA     [2024-Nov-29 11:41:23.192369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/8M
+DATA     [2024-Nov-29 11:41:23.193369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/8Y
+DATA     [2024-Nov-29 11:41:23.195369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/9M
+DATA     [2024-Nov-29 11:41:23.196369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum IR_SWAP/RATE/EUR/ESTER/2D/1D/9Y
+DATA     [2024-Nov-29 11:41:23.197369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum MM/RATE/EUR/ESTER/0D/1D
+DATA     [2024-Nov-29 11:41:23.198369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum ZERO/YIELD_SPREAD/EUR/EONIA_ESTER_SPREAD/A365/1D
+DATA     [2024-Nov-29 11:41:23.199369] (...\ored\marketdata\inmemoryloader.cpp:113) : Added MarketDatum ZERO/YIELD_SPREAD/EUR/EONIA_ESTER_SPREAD/A365/50Y
+NOTICE   [2024-Nov-29 11:41:23.200369] (...ytics\orea\app\marketdataloader.cpp:292) : Got market data
+NOTICE   [2024-Nov-29 11:41:23.201369] (...nalytics\orea\app\reportwriter.cpp:1517) : Writing MarketData report
+NOTICE   [2024-Nov-29 11:41:23.205369] (...nalytics\orea\app\reportwriter.cpp:1556) : MarketData report written
+NOTICE   [2024-Nov-29 11:41:23.206369] (...nalytics\orea\app\reportwriter.cpp:1561) : Writing Fixings report
+NOTICE   [2024-Nov-29 11:41:23.207369] (...nalytics\orea\app\reportwriter.cpp:1570) : Fixings report written
+NOTICE   [2024-Nov-29 11:41:23.208369] (...nalytics\orea\app\reportwriter.cpp:1575) : Writing Dividends report
+NOTICE   [2024-Nov-29 11:41:23.209369] (...nalytics\orea\app\reportwriter.cpp:1587) : Dividends report written
+NOTICE   [2024-Nov-29 11:41:23.210375] (...ytics\orea\app\analyticsmanager.cpp:159) : run analytic with label 'PRICING'
+NOTICE   [2024-Nov-29 11:41:23.212375]     (OREAnalytics\orea\app\analytic.cpp:142) : Analytic::buildMarket called
+NOTICE   [2024-Nov-29 11:41:23.213375] (...ta\ored\marketdata\todaysmarket.cpp:113) : Todays Market Loading Fixings
+NOTICE   [2024-Nov-29 11:41:23.214374]     (OREData\ored\marketdata\fixings.cpp:68) : Added 0 of 0 fixings in 0.000001 seconds
+NOTICE   [2024-Nov-29 11:41:23.215375] (...ta\ored\marketdata\todaysmarket.cpp:117) : Todays Market Loading Fixing done.
+NOTICE   [2024-Nov-29 11:41:23.216375] (...ta\ored\marketdata\todaysmarket.cpp:122) : Todays Market Loading Dividends
+NOTICE   [2024-Nov-29 11:41:23.217375] (...ta\ored\marketdata\todaysmarket.cpp:126) : Todays Market Loading Dividends done.
+NOTICE   [2024-Nov-29 11:41:23.219373] (...\ored\marketdata\fxtriangulation.cpp:64) : FXTriangulation: initializing
+NOTICE   [2024-Nov-29 11:41:23.220373] (...ored\marketdata\fxtriangulation.cpp:111) : FXTriangulation: initialized with 0 quotes, 0 currencies.
+NOTICE   [2024-Nov-29 11:41:23.221375] (...\ored\marketdata\dependencygraph.cpp:39) : Build dependency graph for TodaysMarket configuration default
+DATA     [2024-Nov-29 11:41:23.223376] (...\ored\marketdata\dependencygraph.cpp:58) : add vertex # 0: DiscountCurve(EUR,Yield/EUR/EUR-EONIA)
+DATA     [2024-Nov-29 11:41:23.224375] (...\ored\marketdata\dependencygraph.cpp:58) : add vertex # 1: IndexCurve(EUR-EONIA,Yield/EUR/EUR-EONIA)
+DATA     [2024-Nov-29 11:41:23.224881] (...\ored\marketdata\dependencygraph.cpp:58) : add vertex # 2: IndexCurve(EUR-ESTER,Yield/EUR/EUR-ESTER)
+DATA     [2024-Nov-29 11:41:23.226888] (...\ored\marketdata\dependencygraph.cpp:58) : add vertex # 3: EquityCurves(RIC:.STOXX50E,Equity/EUR/RIC:.STOXX50E)
+DATA     [2024-Nov-29 11:41:23.227888] (...\ored\marketdata\dependencygraph.cpp:58) : add vertex # 4: EquityVols(RIC:.STOXX50E,EquityVolatility/EUR/RIC:.STOXX50E)
+DATA     [2024-Nov-29 11:41:23.228888] (...\ored\marketdata\dependencygraph.cpp:82) : add edge from vertex #0 DiscountCurve(EUR,Yield/EUR/EUR-EONIA) to #2 IndexCurve(EUR-ESTER,Yield/EUR/EUR-ESTER)
+DATA     [2024-Nov-29 11:41:23.229888] (...\ored\marketdata\dependencygraph.cpp:82) : add edge from vertex #1 IndexCurve(EUR-EONIA,Yield/EUR/EUR-EONIA) to #2 IndexCurve(EUR-ESTER,Yield/EUR/EUR-ESTER)
+DATA     [2024-Nov-29 11:41:23.230888] (...\ored\marketdata\dependencygraph.cpp:82) : add edge from vertex #3 EquityCurves(RIC:.STOXX50E,Equity/EUR/RIC:.STOXX50E) to #0 DiscountCurve(EUR,Yield/EUR/EUR-EONIA)
+DATA     [2024-Nov-29 11:41:23.232888] (...ored\marketdata\dependencygraph.cpp:315) : add edge from vertex #4 EquityVols(RIC:.STOXX50E,EquityVolatility/EUR/RIC:.STOXX50E) to #0 DiscountCurve(EUR,Yield/EUR/EUR-EONIA)
+DATA     [2024-Nov-29 11:41:23.233888] (...ored\marketdata\dependencygraph.cpp:321) : add edge from vertex #4 EquityVols(RIC:.STOXX50E,EquityVolatility/EUR/RIC:.STOXX50E) to #3 EquityCurves(RIC:.STOXX50E,Equity/EUR/RIC:.STOXX50E)
+DEBUG    [2024-Nov-29 11:41:23.234888] (...ored\marketdata\dependencygraph.cpp:437) : Dependency graph built with 5 vertices, 5 edges.
+NOTICE   [2024-Nov-29 11:41:23.235888] (...ta\ored\marketdata\todaysmarket.cpp:227) : Build objects in TodaysMarket lazily, i.e. when requested.
+NOTICE   [2024-Nov-29 11:41:23.236888] (...ta\ored\marketdata\todaysmarket.cpp:232) : TodaysMarket build stats:
+NOTICE   [2024-Nov-29 11:41:23.237888] (...ta\ored\marketdata\todaysmarket.cpp:238) : 1 load fixings                    :             1.1 ms         1            1.1 ms
+NOTICE   [2024-Nov-29 11:41:23.238888] (...ta\ored\marketdata\todaysmarket.cpp:238) : 2 load dividends                  :          0.0084 ms         1         0.0084 ms
+NOTICE   [2024-Nov-29 11:41:23.239888] (...ta\ored\marketdata\todaysmarket.cpp:238) : 3 add all fx quotes               :            2.44 ms         1           2.44 ms
+NOTICE   [2024-Nov-29 11:41:23.241888] (...ta\ored\marketdata\todaysmarket.cpp:238) : 4 build dep graphs                :            14.5 ms         1           14.5 ms
+NOTICE   [2024-Nov-29 11:41:23.242888] (...ta\ored\marketdata\todaysmarket.cpp:241) : Total build time              :         18.0723 ms
+NOTICE   [2024-Nov-29 11:41:23.243888]     (OREAnalytics\orea\app\analytic.cpp:172) : Market Build time 0.030562 sec
+NOTICE   [2024-Nov-29 11:41:23.244888]    (OREData\ored\portfolio\portfolio.cpp:44) : Reset portfolio of size 1
+NOTICE   [2024-Nov-29 11:41:23.245887]     (OREAnalytics\orea\app\analytic.cpp:190) : Build the portfolio
+NOTICE   [2024-Nov-29 11:41:23.246886]     (OREAnalytics\orea\app\analytic.cpp:124) : Analytic::engineFactory() called
+NOTICE   [2024-Nov-29 11:41:23.247886]     (OREAnalytics\orea\app\analytic.cpp:134) : MarketContext::pricing = default
+NOTICE   [2024-Nov-29 11:41:23.249887] (...ta\ored\portfolio\enginefactory.cpp:152) : Building EngineFactory
+NOTICE   [2024-Nov-29 11:41:23.251886]   (OREData\ored\portfolio\portfolio.cpp:123) : Building Portfolio of size 1 for context = 'analytic/PRICING'
+DEBUG    [2024-Nov-29 11:41:23.252888] (...ta\ored\marketdata\todaysmarket.cpp:823) : market object EquityCurves(RIC:.STOXX50E) required for configuration 'default'
+DATA     [2024-Nov-29 11:41:23.254889] (...ta\ored\marketdata\todaysmarket.cpp:901) : Can build objects in the following order:
+DATA     [2024-Nov-29 11:41:23.255888] (...ta\ored\marketdata\todaysmarket.cpp:903) : vertex #2: IndexCurve(EUR-ESTER,Yield/EUR/EUR-ESTER) (not yet built)
+DATA     [2024-Nov-29 11:41:23.256888] (...ta\ored\marketdata\todaysmarket.cpp:903) : vertex #0: DiscountCurve(EUR,Yield/EUR/EUR-EONIA) (not yet built)
+DATA     [2024-Nov-29 11:41:23.257888] (...ta\ored\marketdata\todaysmarket.cpp:903) : vertex #3: EquityCurves(RIC:.STOXX50E,Equity/EUR/RIC:.STOXX50E) (not yet built)
+DEBUG    [2024-Nov-29 11:41:23.258887] (...ta\ored\marketdata\todaysmarket.cpp:296) : Building YieldCurve for asof June 24th, 2021
+DEBUG    [2024-Nov-29 11:41:23.260887] (OREData\ored\marketdata\yieldcurve.cpp:274) : Bootstrapping YieldCurve Yield/EUR/EUR-ESTER
+DEBUG    [2024-Nov-29 11:41:23.261888] (...ata\ored\marketdata\yieldcurve.cpp:1316) : Adding Segment Deposit with conventions "EUR-ON-DEPOSIT-ESTER"
+DATA     [2024-Nov-29 11:41:23.262889] (...ed\utilities\indexnametranslator.cpp:44) : IndexNameTranslator: adding 'EsterON Actual/360' <-> 'EUR-ESTER'
+DATA     [2024-Nov-29 11:41:23.264887] (...ed\utilities\indexnametranslator.cpp:44) : IndexNameTranslator: adding 'EsterON Actual/360' <-> 'EUR-ESTER'
+DEBUG    [2024-Nov-29 11:41:23.265888] (...ata\ored\marketdata\yieldcurve.cpp:1531) : Adding Segment OIS with conventions "EUR-ESTER-OIS"
+DATA     [2024-Nov-29 11:41:23.266888] (...ed\utilities\indexnametranslator.cpp:44) : IndexNameTranslator: adding 'EsterON Actual/360' <-> 'EUR-ESTER'
+DEBUG    [2024-Nov-29 11:41:23.297888] (...ata\ored\marketdata\yieldcurve.cpp:1011) : Bootstrapping with 37 instruments
+DEBUG    [2024-Nov-29 11:41:23.369445] (OREData\ored\marketdata\yieldcurve.cpp:313) : Yield curve Yield/EUR/EUR-ESTER built
+DEBUG    [2024-Nov-29 11:41:23.371446] (...ta\ored\marketdata\todaysmarket.cpp:302) : Added YieldCurve "Yield/EUR/EUR-ESTER" to requiredYieldCurves map
+DEBUG    [2024-Nov-29 11:41:23.372447] (...ta\ored\marketdata\todaysmarket.cpp:321) : Adding Index(EUR-ESTER) with spec Yield/EUR/EUR-ESTER to configuration default
+DATA     [2024-Nov-29 11:41:23.373958] (...ed\utilities\indexnametranslator.cpp:44) : IndexNameTranslator: adding 'EsterON Actual/360' <-> 'EUR-ESTER'
+DEBUG    [2024-Nov-29 11:41:23.374959] (...ta\ored\marketdata\todaysmarket.cpp:913) : built node IndexCurve(EUR-ESTER,Yield/EUR/EUR-ESTER) in configuration default
+DEBUG    [2024-Nov-29 11:41:23.375960] (...ta\ored\marketdata\todaysmarket.cpp:296) : Building YieldCurve for asof June 24th, 2021
+DEBUG    [2024-Nov-29 11:41:23.376959] (OREData\ored\marketdata\yieldcurve.cpp:256) : Building ZeroSpreadedCurve Yield/EUR/EUR-EONIA
+DEBUG    [2024-Nov-29 11:41:23.378958] (OREData\ored\marketdata\yieldcurve.cpp:313) : Yield curve Yield/EUR/EUR-EONIA built
+DEBUG    [2024-Nov-29 11:41:23.379958] (...ta\ored\marketdata\todaysmarket.cpp:302) : Added YieldCurve "Yield/EUR/EUR-EONIA" to requiredYieldCurves map
+DEBUG    [2024-Nov-29 11:41:23.380957] (...ta\ored\marketdata\todaysmarket.cpp:311) : Adding DiscountCurve(EUR) with spec Yield/EUR/EUR-EONIA to configuration default
+DEBUG    [2024-Nov-29 11:41:23.381960] (...ta\ored\marketdata\todaysmarket.cpp:913) : built node DiscountCurve(EUR,Yield/EUR/EUR-EONIA) in configuration default
+DEBUG    [2024-Nov-29 11:41:23.384961] (...ta\ored\marketdata\todaysmarket.cpp:644) : Building EquityCurve for asof June 24th, 2021
+DEBUG    [2024-Nov-29 11:41:23.386960] (...ata\ored\marketdata\equitycurve.cpp:110) : Wild card quote specified for RIC:.STOXX50E
+DEBUG    [2024-Nov-29 11:41:23.389960] (...ata\ored\marketdata\equitycurve.cpp:175) : EquityCurve Volatility Price found for quote: EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-12-17/4025/P
+DEBUG    [2024-Nov-29 11:41:23.391960] (...ata\ored\marketdata\equitycurve.cpp:175) : EquityCurve Volatility Price found for quote: EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-11-19/4000/P
+DEBUG    [2024-Nov-29 11:41:23.393960] (...ata\ored\marketdata\equitycurve.cpp:175) : EquityCurve Volatility Price found for quote: EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-11-19/4000/C
+DEBUG    [2024-Nov-29 11:41:23.396960] (...ata\ored\marketdata\equitycurve.cpp:175) : EquityCurve Volatility Price found for quote: EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-12-17/3975/P
+DEBUG    [2024-Nov-29 11:41:23.398960] (...ata\ored\marketdata\equitycurve.cpp:175) : EquityCurve Volatility Price found for quote: EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2022-03-18/4050/C
+DEBUG    [2024-Nov-29 11:41:23.399960] (...ata\ored\marketdata\equitycurve.cpp:175) : EquityCurve Volatility Price found for quote: EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2022-03-18/4050/P
+DEBUG    [2024-Nov-29 11:41:23.401959] (...ata\ored\marketdata\equitycurve.cpp:175) : EquityCurve Volatility Price found for quote: EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-11-19/3975/C
+DEBUG    [2024-Nov-29 11:41:23.402959] (...ata\ored\marketdata\equitycurve.cpp:175) : EquityCurve Volatility Price found for quote: EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-11-19/4025/C
+DEBUG    [2024-Nov-29 11:41:23.404960] (...ata\ored\marketdata\equitycurve.cpp:175) : EquityCurve Volatility Price found for quote: EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-12-17/4000/C
+DEBUG    [2024-Nov-29 11:41:23.405963] (...ata\ored\marketdata\equitycurve.cpp:175) : EquityCurve Volatility Price found for quote: EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2022-03-18/3950/P
+DEBUG    [2024-Nov-29 11:41:23.406959] (...ata\ored\marketdata\equitycurve.cpp:175) : EquityCurve Volatility Price found for quote: EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-11-19/4025/P
+DEBUG    [2024-Nov-29 11:41:23.407959] (...ata\ored\marketdata\equitycurve.cpp:175) : EquityCurve Volatility Price found for quote: EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-12-17/3975/C
+DEBUG    [2024-Nov-29 11:41:23.408957] (...ata\ored\marketdata\equitycurve.cpp:175) : EquityCurve Volatility Price found for quote: EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-12-17/4000/P
+DEBUG    [2024-Nov-29 11:41:23.410961] (...ata\ored\marketdata\equitycurve.cpp:175) : EquityCurve Volatility Price found for quote: EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2022-03-18/4000/C
+DEBUG    [2024-Nov-29 11:41:23.411962] (...ata\ored\marketdata\equitycurve.cpp:175) : EquityCurve Volatility Price found for quote: EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2022-03-18/4000/P
+DEBUG    [2024-Nov-29 11:41:23.412961] (...ata\ored\marketdata\equitycurve.cpp:175) : EquityCurve Volatility Price found for quote: EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-12-17/4025/C
+DEBUG    [2024-Nov-29 11:41:23.413962] (...ata\ored\marketdata\equitycurve.cpp:175) : EquityCurve Volatility Price found for quote: EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2022-03-18/3950/C
+DEBUG    [2024-Nov-29 11:41:23.414961] (...ata\ored\marketdata\equitycurve.cpp:175) : EquityCurve Volatility Price found for quote: EQUITY_OPTION/PRICE/RIC:.STOXX50E/EUR/2021-11-19/3975/P
+DEBUG    [2024-Nov-29 11:41:23.415966] (...ata\ored\marketdata\equitycurve.cpp:222) : EquityCurve: read 18 quotes of type OptionPremium
+DEBUG    [2024-Nov-29 11:41:23.416964] (...ata\ored\marketdata\equitycurve.cpp:223) : EquityCurve: ignored 0 expired quotes.
+DEBUG    [2024-Nov-29 11:41:23.417962] (...ata\ored\marketdata\equitycurve.cpp:298) : Building Equity Dividend Yield curve from Option Volatilities
+DATA     [2024-Nov-29 11:41:23.419962] (...ata\ored\marketdata\equitycurve.cpp:327) : Adding Call and Put for strike/expiry pair : 2021-11-19/4000
+DATA     [2024-Nov-29 11:41:23.420961] (...ata\ored\marketdata\equitycurve.cpp:327) : Adding Call and Put for strike/expiry pair : 2022-03-18/4050
+DATA     [2024-Nov-29 11:41:23.421963] (...ata\ored\marketdata\equitycurve.cpp:327) : Adding Call and Put for strike/expiry pair : 2021-11-19/3975
+DATA     [2024-Nov-29 11:41:23.422962] (...ata\ored\marketdata\equitycurve.cpp:327) : Adding Call and Put for strike/expiry pair : 2021-11-19/4025
+DATA     [2024-Nov-29 11:41:23.424467] (...ata\ored\marketdata\equitycurve.cpp:327) : Adding Call and Put for strike/expiry pair : 2021-12-17/4000
+DATA     [2024-Nov-29 11:41:23.425473] (...ata\ored\marketdata\equitycurve.cpp:327) : Adding Call and Put for strike/expiry pair : 2021-12-17/3975
+DATA     [2024-Nov-29 11:41:23.426473] (...ata\ored\marketdata\equitycurve.cpp:327) : Adding Call and Put for strike/expiry pair : 2022-03-18/4000
+DATA     [2024-Nov-29 11:41:23.428472] (...ata\ored\marketdata\equitycurve.cpp:327) : Adding Call and Put for strike/expiry pair : 2021-12-17/4025
+DATA     [2024-Nov-29 11:41:23.429472] (...ata\ored\marketdata\equitycurve.cpp:327) : Adding Call and Put for strike/expiry pair : 2022-03-18/3950
+DEBUG    [2024-Nov-29 11:41:23.430476] (...ata\ored\marketdata\equitycurve.cpp:349) : Found 9 Call and Put Option Volatilities
+DEBUG    [2024-Nov-29 11:41:23.431473] (...ata\ored\marketdata\equitycurve.cpp:351) : Building a Sparse Volatility surface for calls and puts
+DEBUG    [2024-Nov-29 11:41:23.432472] (...ata\ored\marketdata\equitycurve.cpp:357) : CallSurface contains 3 expiries.
+DEBUG    [2024-Nov-29 11:41:23.434472] (...ata\ored\marketdata\equitycurve.cpp:359) : Stripping equity forwards from the option premium surfaces
+DEBUG    [2024-Nov-29 11:41:23.435472] (...ta\ored\marketdata\todaysmarket.cpp:652) : Adding EquityCurve (RIC:.STOXX50E) with spec Equity/EUR/RIC:.STOXX50E to configuration default
+DATA     [2024-Nov-29 11:41:23.437474] (...ed\utilities\indexnametranslator.cpp:44) : IndexNameTranslator: adding 'RIC:.STOXX50E' <-> 'EQ-RIC:.STOXX50E'
+DEBUG    [2024-Nov-29 11:41:23.438473] (...ta\ored\marketdata\todaysmarket.cpp:913) : built node EquityCurves(RIC:.STOXX50E,Equity/EUR/RIC:.STOXX50E) in configuration default
+DEBUG    [2024-Nov-29 11:41:23.439473] (...ta\ored\marketdata\todaysmarket.cpp:925) : Loaded CurvesSpecs: success: 3, error: 0
+DEBUG    [2024-Nov-29 11:41:23.440473] (...ta\ored\marketdata\todaysmarket.cpp:823) : market object EquityCurves(RIC:.STOXX50E) required for configuration 'default'
+DEBUG    [2024-Nov-29 11:41:23.441473] (...ta\ored\marketdata\todaysmarket.cpp:880) : node already built, do nothing.
+NOTICE   [2024-Nov-29 11:41:23.442473] (...ta\ored\portfolio\vanillaoption.cpp:180) : Build VanillaOption for trade EQ_CALL_STOXX50E
+NOTICE   [2024-Nov-29 11:41:23.444473] (...ta\ored\portfolio\vanillaoption.cpp:202) : tradeTypeBuilder set to EquityOption for trade EQ_CALL_STOXX50E
+DEBUG    [2024-Nov-29 11:41:23.445473] (...ta\ored\marketdata\todaysmarket.cpp:823) : market object EquityVols(RIC:.STOXX50E) required for configuration 'default'
+DATA     [2024-Nov-29 11:41:23.466474] (...ta\ored\marketdata\todaysmarket.cpp:901) : Can build objects in the following order:
+DATA     [2024-Nov-29 11:41:23.468471] (...ta\ored\marketdata\todaysmarket.cpp:903) : vertex #2: IndexCurve(EUR-ESTER,Yield/EUR/EUR-ESTER) (already built)
+DATA     [2024-Nov-29 11:41:23.469472] (...ta\ored\marketdata\todaysmarket.cpp:903) : vertex #0: DiscountCurve(EUR,Yield/EUR/EUR-EONIA) (already built)
+DATA     [2024-Nov-29 11:41:23.470476] (...ta\ored\marketdata\todaysmarket.cpp:903) : vertex #3: EquityCurves(RIC:.STOXX50E,Equity/EUR/RIC:.STOXX50E) (already built)
+DATA     [2024-Nov-29 11:41:23.471473] (...ta\ored\marketdata\todaysmarket.cpp:903) : vertex #4: EquityVols(RIC:.STOXX50E,EquityVolatility/EUR/RIC:.STOXX50E) (not yet built)
+NOTICE   [2024-Nov-29 11:41:23.472472] (...ta\ored\marketdata\todaysmarket.cpp:671) : Building EquityVol for asof June 24th, 2021
+DEBUG    [2024-Nov-29 11:41:23.474472] (...ta\ored\marketdata\todaysmarket.cpp:823) : market object EquityCurves(RIC:.STOXX50E) required for configuration 'default'
+DEBUG    [2024-Nov-29 11:41:23.475474] (...ta\ored\marketdata\todaysmarket.cpp:880) : node already built, do nothing.
+NOTICE   [2024-Nov-29 11:41:23.476473] (...a\ored\marketdata\equityvolcurve.cpp:66) : EquityVolCurve: start building equity volatility structure with ID RIC:.STOXX50E
+DEBUG    [2024-Nov-29 11:41:23.477473] (...a\ored\marketdata\equityvolcurve.cpp:79) : EquityVolCurve: Attempting to build equity vol curve from volatilityConfig, 1 volatility configs provided.
+DEBUG    [2024-Nov-29 11:41:23.478472] (...\ored\marketdata\equityvolcurve.cpp:325) : EquityVolCurve: start building 2-D strike volatility surface
+DEBUG    [2024-Nov-29 11:41:23.480472] (...\ored\marketdata\equityvolcurve.cpp:418) : EquityVolCurve: RIC:.STOXX50E: Only one set of quotes, can build surface directly
+DEBUG    [2024-Nov-29 11:41:23.481473] (...\ored\marketdata\equityvolcurve.cpp:443) : EquityVolCurve: RIC:.STOXX50E: Found 42, call quotes and 0 put quotes using wildcard.
+DATA     [2024-Nov-29 11:41:23.483473] (...\ored\marketdata\equityvolcurve.cpp:457) : EquityVolCurve: Strike extrapolation has been set to flat.
+DATA     [2024-Nov-29 11:41:23.484472] (...\ored\marketdata\equityvolcurve.cpp:469) : EquityVolCurve: Time extrapolation has been set to flat.
+DEBUG    [2024-Nov-29 11:41:23.485473] (...\ored\marketdata\equityvolcurve.cpp:542) : EquityVolCurve: Setting BlackVarianceSurfaceSparse extrapolation to true
+DEBUG    [2024-Nov-29 11:57:59.841871] (...\ored\marketdata\equityvolcurve.cpp:545) : EquityVolCurve: EquityVolCurve: finished building 2-D strike volatility surface
+NOTICE   [2024-Nov-29 11:57:59.842877] (...\ored\marketdata\equityvolcurve.cpp:126) : EquityVolCurve: finished building equity volatility structure with ID RIC:.STOXX50E
+DEBUG    [2024-Nov-29 11:57:59.843877] (...ored\marketdata\equityvolcurve.cpp:1081) : EquityVolCurve: Building calibration info for eq vol surface
+DEBUG    [2024-Nov-29 11:57:59.844877] (...ored\marketdata\equityvolcurve.cpp:1263) : EquityVolCurve: Building calibration info for eq vol surface completed.
+DEBUG    [2024-Nov-29 11:57:59.846877] (...ta\ored\marketdata\todaysmarket.cpp:688) : Adding EquityVol (RIC:.STOXX50E) with spec EquityVolatility/EUR/RIC:.STOXX50E to configuration default
+DEBUG    [2024-Nov-29 11:57:59.847877] (...ta\ored\marketdata\todaysmarket.cpp:823) : market object EquityCurves(RIC:.STOXX50E) required for configuration 'default'
+DEBUG    [2024-Nov-29 11:57:59.848877] (...ta\ored\marketdata\todaysmarket.cpp:880) : node already built, do nothing.
+DEBUG    [2024-Nov-29 11:57:59.849877] (...ta\ored\marketdata\todaysmarket.cpp:823) : market object DiscountCurve(EUR) required for configuration 'default'
+DEBUG    [2024-Nov-29 11:57:59.850877] (...ta\ored\marketdata\todaysmarket.cpp:880) : node already built, do nothing.
+DEBUG    [2024-Nov-29 11:57:59.851877] (...ta\ored\marketdata\todaysmarket.cpp:823) : market object EquityCurves(RIC:.STOXX50E) required for configuration 'default'
+DEBUG    [2024-Nov-29 11:57:59.852878] (...ta\ored\marketdata\todaysmarket.cpp:880) : node already built, do nothing.
+DEBUG    [2024-Nov-29 11:57:59.853877] (...ta\ored\marketdata\todaysmarket.cpp:913) : built node EquityVols(RIC:.STOXX50E,EquityVolatility/EUR/RIC:.STOXX50E) in configuration default
+DEBUG    [2024-Nov-29 11:57:59.854877] (...ta\ored\marketdata\todaysmarket.cpp:925) : Loaded CurvesSpecs: success: 1, error: 0
+DEBUG    [2024-Nov-29 11:57:59.855877] (...ta\ored\marketdata\todaysmarket.cpp:823) : market object EquityCurves(RIC:.STOXX50E) required for configuration 'default'
+DEBUG    [2024-Nov-29 11:57:59.856877] (...ta\ored\marketdata\todaysmarket.cpp:880) : node already built, do nothing.
+DEBUG    [2024-Nov-29 11:57:59.857877] (...ta\ored\marketdata\todaysmarket.cpp:823) : market object EquityCurves(RIC:.STOXX50E) required for configuration 'default'
+DEBUG    [2024-Nov-29 11:57:59.858878] (...ta\ored\marketdata\todaysmarket.cpp:880) : node already built, do nothing.
+DEBUG    [2024-Nov-29 11:57:59.860877] (...ta\ored\marketdata\todaysmarket.cpp:823) : market object EquityCurves(RIC:.STOXX50E) required for configuration 'default'
+DEBUG    [2024-Nov-29 11:57:59.861877] (...ta\ored\marketdata\todaysmarket.cpp:880) : node already built, do nothing.
+DEBUG    [2024-Nov-29 11:57:59.862877] (...ta\ored\marketdata\todaysmarket.cpp:823) : market object EquityCurves(RIC:.STOXX50E) required for configuration 'default'
+DEBUG    [2024-Nov-29 11:57:59.863877] (...ta\ored\marketdata\todaysmarket.cpp:880) : node already built, do nothing.
+DEBUG    [2024-Nov-29 11:57:59.864877] (...ta\ored\marketdata\todaysmarket.cpp:823) : market object DiscountCurve(EUR) required for configuration 'default'
+DEBUG    [2024-Nov-29 11:57:59.865877] (...ta\ored\marketdata\todaysmarket.cpp:880) : node already built, do nothing.
+DATA     [2024-Nov-29 11:57:59.866877]   (OREData\ored\portfolio\portfolio.cpp:275) : Required Fixings for trade EQ_CALL_STOXX50E:
+DATA     [2024-Nov-29 11:57:59.867877]   (OREData\ored\portfolio\portfolio.cpp:276) : IndexName FixingDate PayDate AlwaysAddIfPaysOnSettlement
+NOTICE   [2024-Nov-29 11:57:59.868878]   (OREData\ored\portfolio\portfolio.cpp:141) : Built Portfolio. Initial size = 1, size now 1, built 0 failed trades, context is analytic/PRICING
+NOTICE   [2024-Nov-29 11:57:59.870878]     (OREAnalytics\orea\app\analytic.cpp:199) : Filter trades that expire before June 24th, 2021
+NOTICE   [2024-Nov-29 11:57:59.872713]  (OREAnalytics\orea\app\reportwriter.cpp:62) : portfolio valuation
+NOTICE   [2024-Nov-29 11:57:59.873726] (OREAnalytics\orea\app\reportwriter.cpp:125) : NPV file written
+NOTICE   [2024-Nov-29 11:57:59.874724] (...nalytics\orea\app\reportwriter.cpp:1132) : Writing AdditionalResults report
+NOTICE   [2024-Nov-29 11:57:59.876725] (...nalytics\orea\app\reportwriter.cpp:1225) : AdditionalResults report written
+NOTICE   [2024-Nov-29 11:57:59.877724] (...ytics\orea\app\analyticsmanager.cpp:161) : run analytic with label 'PRICING' finished.
+NOTICE   [2024-Nov-29 11:57:59.878727] (...ytics\orea\app\analyticsmanager.cpp:212) : report name additional_results occurs 1 times
+NOTICE   [2024-Nov-29 11:57:59.879728] (...ytics\orea\app\analyticsmanager.cpp:212) : report name dividends occurs 1 times
+NOTICE   [2024-Nov-29 11:57:59.880729] (...ytics\orea\app\analyticsmanager.cpp:212) : report name fixings occurs 1 times
+NOTICE   [2024-Nov-29 11:57:59.881728] (...ytics\orea\app\analyticsmanager.cpp:212) : report name marketdata occurs 1 times
+NOTICE   [2024-Nov-29 11:57:59.882724] (...ytics\orea\app\analyticsmanager.cpp:212) : report name npv occurs 1 times
+NOTICE   [2024-Nov-29 11:57:59.883725]      (OREData\ored\report\csvreport.cpp:107) : Opening CSV file report 'Output/dividends.csv'
+NOTICE   [2024-Nov-29 11:57:59.885725]      (OREData\ored\report\csvreport.cpp:190) : CSV file report 'Output/dividends.csv' closed.
+NOTICE   [2024-Nov-29 11:57:59.887051] (...ytics\orea\app\analyticsmanager.cpp:255) : report dividends written to Output/dividends.csv
+NOTICE   [2024-Nov-29 11:57:59.888052]      (OREData\ored\report\csvreport.cpp:107) : Opening CSV file report 'Output/fixings.csv'
+NOTICE   [2024-Nov-29 11:57:59.890051]      (OREData\ored\report\csvreport.cpp:190) : CSV file report 'Output/fixings.csv' closed.
+NOTICE   [2024-Nov-29 11:57:59.892051] (...ytics\orea\app\analyticsmanager.cpp:255) : report fixings written to Output/fixings.csv
+NOTICE   [2024-Nov-29 11:57:59.893051]      (OREData\ored\report\csvreport.cpp:107) : Opening CSV file report 'Output/marketdata.csv'
+NOTICE   [2024-Nov-29 11:57:59.895051]      (OREData\ored\report\csvreport.cpp:190) : CSV file report 'Output/marketdata.csv' closed.
+NOTICE   [2024-Nov-29 11:57:59.897051] (...ytics\orea\app\analyticsmanager.cpp:255) : report marketdata written to Output/marketdata.csv
+NOTICE   [2024-Nov-29 11:57:59.898051]      (OREData\ored\report\csvreport.cpp:107) : Opening CSV file report 'Output/additional_results.csv'
+NOTICE   [2024-Nov-29 11:57:59.899051]      (OREData\ored\report\csvreport.cpp:190) : CSV file report 'Output/additional_results.csv' closed.
+NOTICE   [2024-Nov-29 11:57:59.901052] (...ytics\orea\app\analyticsmanager.cpp:255) : report additional_results written to Output/additional_results.csv
+NOTICE   [2024-Nov-29 11:57:59.902051]      (OREData\ored\report\csvreport.cpp:107) : Opening CSV file report 'Output/npv_VolatilitySurface.csv'
+NOTICE   [2024-Nov-29 11:57:59.904051]      (OREData\ored\report\csvreport.cpp:190) : CSV file report 'Output/npv_VolatilitySurface.csv' closed.
+NOTICE   [2024-Nov-29 11:57:59.905054] (...ytics\orea\app\analyticsmanager.cpp:255) : report npv written to Output/npv_VolatilitySurface.csv
+NOTICE   [2024-Nov-29 11:57:59.906053]       (OREAnalytics\orea\app\oreapp.cpp:278) : ORE analytics done
+NOTICE   [2024-Nov-29 11:57:59.907054]       (OREAnalytics\orea\app\oreapp.cpp:350) : ORE done.

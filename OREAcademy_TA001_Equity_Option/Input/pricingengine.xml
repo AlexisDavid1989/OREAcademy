@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<PricingEngines>
+  <Product type="EquityOption">
+    <Model>BlackScholesMerton</Model>
+    <ModelParameters/>
+    <Engine>AnalyticEuropeanEngine</Engine>
+    <EngineParameters/>
+  </Product>
+  <Product type="EquityOptionEuropeanCS">
+    <Model>BlackScholesMerton</Model>
+    <ModelParameters/>
+    <Engine>AnalyticCashSettledEuropeanEngine</Engine>
+    <EngineParameters/>
+  </Product>
+</PricingEngines>

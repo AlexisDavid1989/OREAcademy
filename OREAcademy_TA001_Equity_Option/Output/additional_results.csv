@@ -1,0 +1,17 @@
+#TradeId,ResultId,ResultType,ResultValue
+EQ_CALL_STOXX50E,isdaAssetClass,string,Equity
+EQ_CALL_STOXX50E,isdaBaseProduct,string,Option
+EQ_CALL_STOXX50E,isdaSubProduct,string,Price Return Basic Performance
+EQ_CALL_STOXX50E,isdaTransaction,string,
+EQ_CALL_STOXX50E,quantity,double,1.000000
+EQ_CALL_STOXX50E,strike,double,4000.000000
+EQ_CALL_STOXX50E,strikeCurrency,string,EUR
+EQ_CALL_STOXX50E,discountFactor,double,1.002365
+EQ_CALL_STOXX50E,dividendDiscount,double,0.993714
+EQ_CALL_STOXX50E,forward,double,4086.853738
+EQ_CALL_STOXX50E,instMultiplier,double,1.000000
+EQ_CALL_STOXX50E,riskFreeDiscount,double,1.002365
+EQ_CALL_STOXX50E,spot,double,4122.430000
+EQ_CALL_STOXX50E,strike,double,4000.000000
+EQ_CALL_STOXX50E,timeToExpiry,double,0.482192
+EQ_CALL_STOXX50E,volatility,double,0.170474
